@@ -1,0 +1,120 @@
+body {
+    padding:0;
+    margin:0;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.wide {
+    width: 100vw;
+    padding: 100px 150px 100px 150px;
+    margin: 0;
+}
+
+
+button {
+    background-color: #3882f6;
+    color: white;
+    border: 0;
+    border-radius: 25px;
+    padding: 5px 25px 5px 25px;
+    font-size: 18px;
+    
+}
+
+button:hover {
+    background-color: white;
+    color:  #3882f6;
+}
+
+.hero {
+    background-color: #1F2937;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.navbar {
+    background-color: #1F2937;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.navbar ul {
+    align-items: end;
+    display: inline;
+}
+
+.navbar li {
+    display: inline;
+    margin-inline-start: 100px;
+}
+
+.navbar li:hover {
+    background-color: #3882f6;
+}
+
+.info {
+    color: #1F2937;
+    width: 100%;
+}
+
+.info h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.info .card-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    
+}
+
+.info .card-row .img-card {
+
+}
+
+.info img {
+    border-radius: 25px;
+    border-width: 5px;
+    border-color: #3882f6;
+    display: block;
+}
+
+.quote {
+    background-color: #e5e7eb;
+    color: #1F2937;
+}
+
+.quote h1 {
+    font-style: light italic;
+    font-size: 36px;
+}
+
+.quote h2 {
+    font-style: bold;
+    font-size: 24px;
+}
+
+.call {
+    width: 75%;
+    background-color: #3882f6;
+    color: white;
+    border-radius: 25px;
+    padding: 50px 100px 50px 100px;
+}
+
+.call button {
+    border: 2px white;
+}
