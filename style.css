@@ -2,13 +2,15 @@ body {
     padding:0;
     margin:0;
     font-family: "Roboto", sans-serif;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .wide {
-    width: 100vw;
-    padding: 100px 150px 100px 150px;
+    /* setting width to 100% makes horizontal length all screwy*/
+    padding: 100px 150px;
     margin: 0;
+    flex: 1;
 }
 
 
@@ -16,7 +18,7 @@ button {
     background-color: #3882f6;
     color: white;
     border: 0;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 5px 25px 5px 25px;
     font-size: 18px;
     
@@ -31,6 +33,8 @@ button:hover {
     background-color: #1F2937;
     font-size: 18px;
     color: #e5e7eb;
+    flex: 1;
+    display: flex;
 }
 
 .hero h1 {
@@ -39,25 +43,55 @@ button:hover {
     font-weight: 900;
 }
 
+.hero .hero-block {
+    flex: 1;
+}
+
+.hero .img-block {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
 .logo {
     font-size: 24px;
     color: #F9FAF8;
 }
 
+.nav-row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-row .logo {
+    flex: 1;
+
+    padding: 15px 0px;
+}
+
 .navbar {
+    padding: 0px 150px;
     background-color: #1F2937;
     font-size: 18px;
     color: #e5e7eb;
+    flex: 1;
+    height: 100%;
+    width: 100%;
 }
 
 .navbar ul {
-    align-items: end;
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin: auto;
+    padding: 0px;
 }
 
 .navbar li {
-    display: inline;
-    margin-inline-start: 100px;
+    padding: 5px 20px;
+    display:inline-flex;
+    padding: 15px 10px;
 }
 
 .navbar li:hover {
@@ -65,56 +99,81 @@ button:hover {
 }
 
 .info {
+    display: flex;
+    flex-direction: column;
     color: #1F2937;
-    width: 100%;
+    flex: 1;
+    align-items: center;
+    
 }
 
 .info h1 {
+    margin: 0 auto;
     font-size: 36px;
     font-weight: 900;
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 .info .card-row {
     display: grid;
+    align-content: center;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-around;
-    
+    grid-gap: 100px;
 }
 
 .info .card-row .img-card {
-
+    align-content: center;
+    text-align: center;
 }
 
 .info img {
     border-radius: 25px;
-    border-width: 5px;
-    border-color: #3882f6;
+    border: 3px solid #3882f6;
     display: block;
+    margin: 15px;
 }
 
 .quote {
+    flex:1;
     background-color: #e5e7eb;
     color: #1F2937;
 }
 
+.quote .quote-txt {
+    padding: 0px 150px;
+}
+
 .quote h1 {
-    font-style: light italic;
+    font-style: italic;
+    font-weight: lighter;
     font-size: 36px;
 }
 
 .quote h2 {
+    text-align: end;
     font-style: bold;
     font-size: 24px;
 }
 
 .call {
+    display: flex;
+    flex-direction: row;
     width: 75%;
     background-color: #3882f6;
     color: white;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 50px 100px 50px 100px;
+    align-items: center;
+}
+
+.call .txt {
+    flex: 3;
+    margin-right: 25px;
 }
 
 .call button {
-    border: 2px white;
+    flex: 1;
+    margin: auto;
+    border: 2px solid white;
 }
