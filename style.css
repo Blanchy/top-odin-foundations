@@ -125,6 +125,13 @@ button:hover {
 .info .card-row .img-card {
     align-content: center;
     text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.info .card-row .img-card:hover {
+    border-radius: 25px;
+    background-color: aliceblue;
 }
 
 .info img {
